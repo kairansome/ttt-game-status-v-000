@@ -50,8 +50,7 @@ end
 
 def winner(board)
  if won?(board)
-   win_combination[0] = player_token
-   return board[player_token]
+  return board[win_combination[0]]
  else
    return nil
  end
